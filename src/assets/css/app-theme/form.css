@@ -1,0 +1,71 @@
+.el-form-item__label {
+  height: 24px;
+  line-height: 1;
+  padding-right: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.el-form--label-left .el-form-item__label {
+  justify-content: flex-start;
+  flex: 0 0 auto;
+}
+.el-form-item {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.el-form-item .el-form-item {
+  margin-top: 0;
+}
+.el-form-item .el-select,
+.el-form-item .el-date-editor.el-input,
+.el-form-item .el-date-editor.el-input__inner {
+  width: 100%;
+}
+.el-form-item__content {
+  line-height: 1;
+  flex: 1 1 auto;
+  margin: 0 !important;
+}
+.el-form-item__content .el-input-group,
+.el-form-item__label,
+.el-tag .el-icon-close {
+  vertical-align: top;
+}
+.el-form-item__label .iconfont {
+  font-size: 18px;
+}
+
+/* flex */
+.el-form-item[flex] .el-form-item__content {
+  display: flex;
+  align-items: center;
+}
+.el-form-item[flex] .el-form-item__content > * {
+  margin: 0 4px;
+}
+.el-form-item[flex] .greedy {
+  flex: 1 1 auto;
+  width: auto;
+  display: flex;
+}
+.el-form-item[flex] .contain {
+  flex: 0 0 auto;
+}
+
+/* error text */
+.el-form-item__error,
+.el-form-item__error--inline {
+  margin: 0;
+  display: block;
+  height: 16px;
+  padding-top: 2px;
+  position: absolute;
+  top: 100%;
+}
+.el-form-item__error::before {
+  font-family: "iconfont", "Roboto" !important;
+  content: "\e616";
+}

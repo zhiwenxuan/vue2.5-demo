@@ -1,0 +1,19 @@
+.el-table .cell,
+.el-table th div,
+.el-table--border td:first-child .cell,
+.el-table--border th:first-child .cell {
+  padding-left: 8px;
+}
+.el-table .cell,
+.el-table th div {
+  padding-right: 8px;
+  word-break: break-word;
+}
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before {
+  background-color: transparent;
+}
+.el-table__body-wrapper {
+  -webkit-overflow-scrolling: touch;
+}

@@ -1,0 +1,184 @@
+/* input */
+.el-input__inner {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 0;
+  padding: 2px 4px;
+  transition: all 0.3s ease-in-out;
+  height: 24px;
+  line-height: 1;
+  background: transparent;
+}
+.el-input__inner:focus {
+  border-bottom-width: 2px;
+  padding-bottom: 1px;
+}
+.el-input__inner[type="number"]::-webkit-inner-spin-button,
+.el-input__inner[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.el-input__inner[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* append and prepend */
+/* suffix and prefix */
+.el-input-group__append,
+.el-input-group__prepend {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 0 4px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.el-input__prefix,
+.el-input__suffix {
+  height: 100%;
+}
+.el-input--prefix .el-input__inner {
+  padding-left: 28px;
+}
+.el-input--suffix .el-input__inner {
+  padding-right: 28px;
+}
+.el-input__prefix {
+  left: 0;
+  color: rgba(0, 0, 0, 0.3);
+}
+.el-input__icon.el-icon-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.el-icon-date:before {
+  font-family: "iconfont";
+  content: "\e67d";
+  font-size: 18px;
+  vertical-align: middle;
+}
+.el-input__icon {
+  width: 24px;
+  line-height: 1;
+}
+.el-input__suffix {
+  right: 0;
+  transition: all 0.25s ease-in-out;
+}
+.el-input-group__append .el-button,
+.el-input-group__append .el-select,
+.el-input-group__prepend .el-button,
+.el-input-group__prepend .el-select {
+  margin: -10px 0;
+}
+
+
+/* Solo */
+.bees-input-solo,
+.bees-select-solo {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 0 2px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.bees-input-solo:hover,
+.bees-select-solo:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+.bees-input-solo .el-input__suffix,
+.bees-input-solo .el-input__prefix,
+.bees-select-solo .el-input__suffix,
+.bees-select-solo .el-input__prefix {
+  height: 36px !important;
+  width: 36px;
+}
+.bees-input-solo .el-input__inner,
+.bees-select-solo .el-input__inner {
+  border: none;
+  height: 36px !important;
+  padding: 0 36px 0 24px;
+}
+
+/* Situational Textarea */
+.bees-textarea-situational .el-textarea__inner {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.87);
+  opacity: 0.5;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 4px 8px;
+  transition: all 0.3s ease-in-out;
+}
+.bees-textarea-situational .el-textarea__inner:hover {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  opacity: 1;
+}
+.bees-textarea-situational .el-textarea__inner:focus {
+  border: 1px solid #30b44e;
+  opacity: 1;
+}
+
+/* Plain */
+.bees-select-plain .el-input__inner,
+.bees-input-plain .el-input__inner {
+  border-color: transparent !important;
+}
+
+/* Border */
+.bees-select-border,
+.bees-input-border {
+  border-radius: 2px;
+}
+.bees-select-border .el-input__inner,
+.bees-input-border .el-input__inner {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  height: 32px;
+}
+.bees-select-border .el-input__inner:focus,
+.bees-input-border .el-input__inner:focus {
+  padding-bottom: 2px;
+}
+
+/* Raised */
+.bees-select-raised,
+.bees-input-raised {
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+}
+.bees-select-raised .el-input__inner,
+.bees-input-raised .el-input__inner {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  height: 32px;
+  /* padding-left: 24px; */
+}
+.bees-select-raised .el-input__inner:focus,
+.bees-input-raised .el-input__inner:focus,
+.bees-select-raised:hover .el-input__inner,
+.bees-input-raised:hover .el-input__inner,
+.bees-select-raised .el-input.is-focus .el-input__inner,
+.bees-input-raised .el-input.is-focus .el-input__inner {
+  padding-bottom: 2px;
+  border-color: transparent;
+}
+.bees-select-raised:hover,
+.bees-input-raised:hover,
+.bees-select-raised:focus,
+.bees-input-raised:focus {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* date */
+.el-date-editor .el-range-separator,
+.el-date-editor .el-range__close-icon {
+  line-height: 1;
+  flex: 0 0 auto;
+}
+.el-date-editor .el-range__close-icon {
+  position: absolute;
+  right: 0;
+}
+.el-date-editor .el-range-input{
+  width: auto;
+  min-width: 0;
+  flex: 1 1 auto;
+}

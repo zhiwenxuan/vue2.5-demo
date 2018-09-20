@@ -1,0 +1,41 @@
+/* context-menu */
+#app .ctx-menu-container {
+  border: none;
+  background-color: transparent;
+}
+#app .ctx-menu {
+  min-width: 168px;
+  border: none;
+  margin-top: 4px;
+  padding: 4px 0;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.24);
+}
+#app .ctx-menu li {
+  min-height: 32px;
+  line-height: 1.5;
+  padding: 4px 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  }
+#app .ctx-menu li:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+#app .ctx-menu li i {
+  margin-left: -8px;
+  margin-right: 4px;
+}
+#app .ctx-menu li i,
+#app .ctx-menu li i::before {
+  display: inline-block;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.54);
+}

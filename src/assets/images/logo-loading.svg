@@ -1,0 +1,82 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+        <defs>
+          <style>
+            path#p {
+              stroke: #30b44e;
+              stroke-dasharray: 2500;
+              stroke-dashoffset: 2500;
+              animation: dash 6s linear infinite ;
+            }
+             path#p1 {
+              stroke: rgb(247,204,105);
+              stroke-dasharray: 2500;
+              stroke-dashoffset: 2500;
+              animation: dash1 6s linear 3s infinite backwards		 ;
+            }
+            path#p2 {
+              stroke-dasharray: 2500;
+              stroke-dashoffset: 2500;
+              animation: static 6s linear 3s infinite;
+            }
+            @keyframes dash {
+              0% {
+                stroke-dashoffset: 2500;
+              }
+              50% {
+                stroke: #30b44e;
+                stroke-dashoffset: 0;
+              }              
+              50.1%{
+                stroke: transparent;
+                stroke-dashoffset: 0;
+              }
+              100%{
+                stroke: transparent;
+                stroke-dashoffset: 0;
+              }
+            }
+             @keyframes dash1 {
+              0% {
+                stroke-dashoffset: 2500;
+              }
+              50% {
+                stroke: rgb(247,204,105);
+                stroke-dashoffset: 0;
+              }              
+              50.1%{
+                stroke: transparent;
+              }
+              100%{
+                stroke: transparent;
+              }
+            }
+            @keyframes static {
+              from {
+                stroke: #30b44e;
+                stroke-dashoffset: 0;
+              }
+              50% {
+                stroke: #30b44e;
+              }
+              50.1% {
+                stroke: rgb(247,204,105);
+              }
+              to {
+                stroke: rgb(247,204,105);
+                stroke-dashoffset: 0;
+              }
+            } 
+          </style>
+        </defs>
+        <title>logo-loading</title>
+        <path id="p2" delay="5" fill="transparent" stroke-width="33" stroke-miterlimit="10" d="
+          M210,70 110,70 A20 20 0 0 0 110 210 h240 A20 20 0 0 0 350 70 H260 V365 H360 A20 20 0 0 0 360 210 H100 A20 20 0 0 0 100 365 H200 V60">
+        </path> 
+        <path id="p" fill="transparent" stroke-width="35" stroke-miterlimit="10" d="
+          M210,70 110,70 A20 20 0 0 0 110 210 h240 A20 20 0 0 0 350 70 H260 V365 H360 A20 20 0 0 0 360 210 H100 A20 20 0 0 0 100 365 H200 V60">
+        </path>
+        <path id="p1" fill="transparent" stroke-width="35"  stroke-miterlimit="10" d="
+          M210,70 110,70 A20 20 0 0 0 110 210 h240 A20 20 0 0 0 350 70 H260 V365 H360 A20 20 0 0 0 360 210 H100 A20 20 0 0 0 100 365 H200 V60">
+        </path>
+          <!-- <animate attributeName="stroke" attributeType="XML" values="#30b44e;blue;rgb(247,204,105);purple;pink;#30b44e" dur="15s" repeatCount="indefinite"></animate> -->
+  </svg>

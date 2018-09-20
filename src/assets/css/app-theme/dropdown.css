@@ -1,0 +1,58 @@
+/* drop down 
+** remove popper__arrow
+** change popper style
+** change suffix style
+*/
+.el-select-dropdown .popper__arrow,
+.el-picker-panel .popper__arrow,
+.el-dropdown-menu .popper__arrow {
+  display: none;
+}
+.el-select-dropdown,
+.el-picker-panel,
+.el-dropdown-menu {
+  border-radius: 2px;
+}
+
+.el-popper,
+.el-popper[x-placement^="bottom"],
+.el-popper[x-placement^="top"] {
+  margin: 4px 0;
+  border: none;
+  box-shadow: 0 1.5px 2.5px 0.25px rgba(0, 0, 0, 0.24),
+    0 1px 3px 0.25px rgba(0, 0, 0, 0.16);
+  /* prevent border-radius disappeared */
+  overflow: auto;
+  max-width: calc(100% - 10px);
+}
+.el-select-dropdown__list,
+.el-dropdown-menu {
+  padding: 4px 0;
+}
+.el-select-dropdown__item,
+.el-dropdown-menu__item {
+  height: 32px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: left;
+  align-items: center
+}
+.el-dropdown-menu__item:focus,
+.el-dropdown-menu__item:not(.is-disabled):hover {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.el-dropdown-link {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.tool.el-dropdown-link {
+  justify-content: center;
+}
+
+.el-dropdown-menu__item i{
+  margin-left: -8px;
+  margin-right: 4px;
+}

@@ -1,0 +1,50 @@
+.el-tag {
+  border-radius: 100px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.54);
+  border: none;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.el-tag.el-tag--primary,
+.el-tag.el-tag--success{
+  background-color: #30b44e;
+  color: #fff
+}
+.el-tag.el-tag--danger{
+  background-color: #f56c6c;
+  color: #fff
+}
+.el-tag.el-tag--warning{
+  background-color: #e6a23c;
+  color: #fff
+}
+.el-tag.el-tag--plain{
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+}
+.el-select .el-tag {
+  color: rgba(0, 0, 0, 0.54);
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.el-select .el-tag__close.el-icon-close {
+  right: -6px;
+  transform: none;
+  background-color: transparent;
+  margin-top: 0;
+}
+.el-select .el-tag__close.el-icon-close:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.el-select .el-tag__close.el-icon-close:before {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: iconfont;
+  transform: none;
+  content: "\e6b7";
+}
+
+.el-tag.el-tag--small {
+  padding: 0 12px;
+}

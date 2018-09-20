@@ -1,0 +1,20 @@
+.el-tabs__header {
+  margin: 0;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+.el-tabs__nav{
+    padding: 0 20px;
+}
+.el-tabs__item {
+  height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  /* font-weight: 500; */
+  color: rgba(0, 0, 0, 0.54);
+  line-height: 48px;
+}
+.el-tabs__active-bar {
+  height: 4px;
+  box-sizing: content-box;
+  left: 20px;
+}

@@ -1,0 +1,11 @@
+.el-dialog {
+  margin: auto !important;
+}
+.el-dialog__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.v--modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}

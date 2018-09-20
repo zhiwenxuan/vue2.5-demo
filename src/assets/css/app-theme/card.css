@@ -1,0 +1,90 @@
+.card {
+  background-color: white;
+  border-radius: 2px;
+
+  /* prevent border-radius disappeared */
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 0 2px rgba(0, 0, 0, 0.12);
+  transition: all 0.325s ease-in-out;
+  max-width: 100%;
+}
+.card.placed {
+  box-shadow: none;
+  background-color: transparent;
+}
+.card.raisable {
+  cursor: pointer;
+}
+.card.raisable:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.tri-row-layout {
+  display: flex;
+  flex-direction: column;
+}
+.tri-row-layout .card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  height: 48px;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.tri-row-layout .card-header-title {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 8px;
+}
+.tri-row-layout .card-header-title[size="large"] {
+  font-size: 21px;
+  padding: 0 16px;
+}
+.tri-row-layout .card-header-title[size="small"] {
+  font-size: 14px;
+}
+
+.tri-row-layout .card-header-tools {
+  margin-left: auto;
+  float: right;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tri-row-layout .card-body {
+  padding: 16px;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.tri-row-layout .layout-body{
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.tri-row-layout .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8px 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.tri-row-layout .card-footer-left,
+.tri-row-layout .card-footer-right,
+.tri-row-layout .footer-left,
+.tri-row-layout .footer-right {
+  display: flex;
+  align-items: center;
+}
+.tri-row-layout .layout-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8px 8px;
+}
+.tri-row-layout .footer-right{
+  margin-left: auto;
+}
