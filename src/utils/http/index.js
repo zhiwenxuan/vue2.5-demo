@@ -64,7 +64,7 @@ const Http = axios.create({
     baseURL: BaseUrl, //配置API基本路径
     responseType: "json",
     timeout: 10000,
-    withCredentials: false //允许跨域
+    withCredentials: true //允许跨域
 });
 
 //请求拦截
